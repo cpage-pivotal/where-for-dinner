@@ -1,0 +1,26 @@
+id: caaf79be-a620-4fc3-98b0-30e44a087f21
+timestamp: 2023-12-18T21:52:11.644Z
+source: TAP-GUI
+username: cpage-pivotal
+accelerator:
+  name: where-for-dinner
+fragments:
+  - name: build-wrapper-maven
+  - name: tap-workload
+options:
+  projectName: where-for-dinner
+  workloadNamespace: where-for-dinner
+  serviceNamespace: service-instances
+  workloadType: web
+  gatewayType: ossscg
+  msgBrokerType: rabbitmq
+  dynamicMsgBroker: false
+  msgbrokerName: msgbroker-where-for-dinner
+  dbType: h2
+  cacheType: inmemCache
+  enableSecurity: false
+  appWorkloadURL: http://where-for-dinner.<UPDATE ME>
+  ployglotWorkloads: false
+  nativeBuild: false
+  includeBuildToolWrapper: true
+  numRabbitMQClusterNodes: 1
